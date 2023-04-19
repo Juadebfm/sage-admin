@@ -1,12 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Sage Admin Dashboard</title>
   </head>
-  <body>
-    Dashboard
+  <body
+    class="bg-sagewhite text-sageblue h-full lg:h-[100%] font-Gilroy opacity-0 transition-opacity duration-300"
+  >
+    <nav
+      class="flex flex-col items-start justify-start bg-sagered text-sageoffWhite"
+    >
+      <div>
+        <img src="./assets/dash-logo.png" alt="" />
+        <ul>
+          <li>
+            <span><i class="bx bxs-dashboard"></i></span><span>Dashboard</span>
+          </li>
+          <li>
+            <span><i class="bx bx-book-content"></i></span><span>Courses</span>
+          </li>
+        </ul>
+      </div>
+      <div></div>
+    </nav>
+    <script src="./login.js"></script>
   </body>
 </html>
