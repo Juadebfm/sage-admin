@@ -7,7 +7,42 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./style.css" />
     <!-- xCSS -->
-    <title>Document</title>
+    <title>Sage | Login</title>
   </head>
-  <body></body>
+  <body>
+    <div class="Sign-in-form">
+      <h1>Welcome Back</h1>
+      <p>Sign-in your account to continue</p>
+      <div class="form-input">
+        <p>
+          <label for="Email Address">Email Address</label>
+          <input type="email" placeholder="Enter email address" />
+        </p>
+        <p>
+          <label for="Password">Password</label>
+          <input type="password" placeholder="Enter password" />
+        </p>
+        <div class="buttons">
+          <button>Sign-In</button>
+          <button>Continue with Google</button>
+        </div>
+        <div class="options">
+          <span>Don't have an account? </span>
+          <span onclick="window.transitionToPage('./signup.html')"
+            >Create Account</span
+          >
+        </div>
+      </div>
+    </div>
+    <div class="Sign-in-img">
+      <img src="./assets/arch-d.png" alt="Arch" />
+      <img
+        src="./assets/Login-Image-2.png"
+        alt="Login-Image"
+        class="Login-Image"
+      />
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
 </html>

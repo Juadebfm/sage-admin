@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- xCSS -->
+    <title>Sage | Login</title>
+  </head>
+  <body class="signup">
+    <div class="Sign-in-img">
+      <img src="./assets/arch-d.png" alt="Arch" />
+      <img
+        src="./assets/Sign-up-main.png"
+        alt="Login-Image"
+        class="Login-Image"
+      />
+    </div>
+    <div class="Sign-in-form">
+      <h1>Create an Account</h1>
+      <p>Setup your account to get started</p>
+      <div class="form-input">
+        <p>
+          <label for="Full name">Full Name</label>
+          <input type="text" placeholder="Enter full name" />
+        </p>
+        <p>
+          <label for="Email Adress">Email Address</label>
+          <input type="email" placeholder="Enter email" />
+        </p>
+        <p>
+          <label for="Phone Number">Email phone number</label>
+          <input type="tel" placeholder="Enter phone number" />
+        </p>
+        <p>
+          <label for="Password">Email password</label>
+          <input type="password" placeholder="Create password" />
+        </p>
+        <p>
+          <label for="Confirm Password">Confirm password</label>
+          <input type="password" placeholder="Confirm password" />
+        </p>
+        <div class="buttons">
+          <button>Get Started</button>
+          <button>Create account with Google</button>
+        </div>
+        <div class="options">
+          <span>Already have an account? </span>
+          <span onclick="window.transitionToPage('./index.html')">Sign-In</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+    <script src="./signup.js"></script>
+  </body>
+</html>
