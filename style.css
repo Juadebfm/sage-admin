@@ -1,0 +1,13 @@
+/* FONT */
+@font-face {
+  font-family: myFirstFont;
+  src: url("./assets/gilroy/Gilroy-Regular.ttf");
+}
+/* FONT */
+/* INITIALIZATION */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* INITIALIZATION */
