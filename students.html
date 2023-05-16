@@ -11,18 +11,45 @@
     />
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
+    <style>
+      .table-bordered {
+        border-collapse: collapse;
+      }
+      .table-bordered th,
+      .table-bordered td {
+        border: 1px solid black;
+        padding: 8px;
+      }
+      .pagination-container {
+        margin-top: 10px;
+      }
 
-    <title>Sage - Admin</title>
+      .pagination-container button {
+        display: inline-block;
+        margin-right: 5px;
+        padding: 5px 10px;
+        background-color: #ddd;
+        border: none;
+        color: #333;
+        cursor: pointer;
+      }
+
+      .pagination-container button.active {
+        background-color: #990000;
+        color: #fff;
+      }
+    </style>
+    <title>Sage Admin | Students</title>
     <link rel="shortcut icon" type="image/png" href="./img/favicon.ico" />
   </head>
   <body>
     <!-- SIDEBAR -->
     <section id="sidebar">
       <a href="#" class="brand">
-        <i class="bx bx-plus-medical"></i> <span class="text">ZLG</span>
+        <img src="./assets/dash-logo.png" alt="" />
       </a>
       <ul class="side-menu top">
-        <li class="active">
+        <li>
           <a href="#">
             <i class="bx bxs-dashboard"></i>
             <span class="text">Dashboard</span>
@@ -31,13 +58,13 @@
         <li>
           <a href="./medicalRecords.html">
             <i class="bx bx-plus-medical"></i>
-            <span class="text">Medical Records</span>
+            <span class="text">Courses</span>
           </a>
         </li>
-        <li>
-          <a href="./createrecords.html">
+        <li class="active">
+          <a href="#">
             <i class="bx bxs-doughnut-chart"></i>
-            <span class="text">Create Records</span>
+            <span class="text">Students</span>
           </a>
         </li>
         <li>
@@ -69,7 +96,6 @@
       <!-- NAVBAR -->
       <nav>
         <i class="bx bx-menu"></i>
-        <a href="#" class="nav-link">Categories</a>
         <form action="#">
           <div class="form-input">
             <input type="search" placeholder="Search..." />
@@ -80,10 +106,6 @@
         </form>
         <input type="checkbox" id="switch-mode" hidden />
         <label for="switch-mode" class="switch-mode"></label>
-
-        <a href="#" class="profile">
-          <img src="img/people.png" />
-        </a>
       </nav>
       <!-- NAVBAR -->
 
@@ -91,52 +113,34 @@
       <main>
         <div class="head-title">
           <div class="left">
-            <h1>ZLG Dashboard</h1>
+            <h1>Students</h1>
             <ul class="breadcrumb">
               <li>
-                <a href="#">Dashboard</a>
+                <a href="#">Here are the Students on the Platform so far</a>
               </li>
             </ul>
           </div>
         </div>
-
-        <ul class="box-info">
-          <li>
-            <i class="bx bxs-calendar-check"></i>
-            <span class="text">
-              <h3></h3>
-              <p>Men</p>
-            </span>
-          </li>
-          <li>
-            <i class="bx bxs-group"></i>
-            <span class="text">
-              <h3></h3>
-              <p>Women</p>
-            </span>
-          </li>
-          <li>
-            <i class="bx bxs-dollar-circle"></i>
-            <span class="text">
-              <h3></h3>
-              <p>Total Records</p>
-            </span>
-          </li>
-        </ul>
+        <div class="sort_box">
+          <div id="tableContainer">
+            <table id="studentTable">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Title</th>
+                  <th>Body</th>
+                  <th>User ID</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
       </main>
       <!-- MAIN -->
     </section>
     <!-- CONTENT -->
 
-    <!-- footer -->
-    <div class="footer">
-      <p>
-        Designed by <a href="#">Juadeb Gabriel </a>
-        <span id="date"></span>
-      </p>
-    </div>
-    <!-- End of footer -->
-
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
