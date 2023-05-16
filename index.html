@@ -4,45 +4,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CSS -->
+    <link rel="shortcut icon" href="./assets/nobg.png" type="image/x-icon" />
     <link rel="stylesheet" href="./style.css" />
-    <!-- xCSS -->
-    <title>Sage | Login</title>
+    <title>Login</title>
   </head>
-  <body>
-    <div class="Sign-in-form">
-      <h1>Welcome Back</h1>
-      <p>Sign-in your account to continue</p>
-      <div class="form-input">
-        <p>
-          <label for="Email Address">Email Address</label>
-          <input type="email" placeholder="Enter email address" />
-        </p>
-        <p>
-          <label for="Password">Password</label>
-          <input type="password" placeholder="Enter password" />
-        </p>
-        <div class="buttons">
+  <body class="login__page">
+    <main>
+      <div class="form">
+        <div class="form__title">
+          <h1>Welcome Back</h1>
+          <p>Sign-in your account to continue</p>
+        </div>
+        <form>
+          <label for="Email Address">
+            <span>Email Address</span>
+            <input type="email" placeholder="Enter email address" />
+          </label>
+          <label for="Email Address">
+            <span>Password</span>
+            <input type="password" placeholder="Enter Password" />
+          </label>
           <button>Sign-In</button>
           <button>Continue with Google</button>
-        </div>
-        <div class="options">
-          <span>Don't have an account? </span>
-          <span onclick="window.transitionToPage('./signup.html')"
-            >Create Account</span
-          >
-        </div>
+          <div class="form_signup_link">
+            <span style="text-align: center"
+              >Don’t have an account?
+              <a href="./signup.html">Create Account</a></span
+            >
+          </div>
+        </form>
       </div>
-    </div>
-    <div class="Sign-in-img">
-      <img src="./assets/arch-d.png" alt="Arch" />
-      <img
-        src="./assets/Login-Image-2.png"
-        alt="Login-Image"
-        class="Login-Image"
-      />
-    </div>
-
-    <script src="./index.js"></script>
+      <div class="login__form__img">
+        <img src="./assets/login_arch.png" alt="Arch" />
+        <img src="./assets/girl-smilng.png" alt="a smiling student" />
+      </div>
+    </main>
   </body>
 </html>
